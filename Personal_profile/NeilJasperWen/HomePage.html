@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('mga pic/rail.gif'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+        }
+
+        header {
+            background-color: #292b2c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        nav {
+            overflow: hidden;
+            text-align: right; 
+            padding: 20px; 
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s; 
+        }
+
+        nav a:hover {
+            color: aqua;
+        }
+
+        nav a.active {
+            color:aqua;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        #personalProfile {
+            flex: 1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        p1 {
+            color: #ffffff;
+            -webkit-text-stroke-color: #292b2c;
+            -webkit-text-stroke-width: 5px;
+            font-size: 150px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        p2 {
+            color: #fdfdfd;
+            font-size: 20px;
+            -webkit-text-stroke-color: #000000;
+            -webkit-text-stroke-width: 2px;
+            font-family:'Arial Narrow Bold', sans-serif;
+            padding-bottom: 70px;
+        }
+
+        p {
+            color: #ffffff;
+            line-height: 1.6;
+        }
+       
+     
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: rgb(67, 52, 122);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;  
+        }
+
+        button:hover {
+            background-color: #00bfff;
+        }
+
+        #personalProfile {
+            text-align: center;
+            animation: galaw 2s ease-in-out;
+        }
+
+        @keyframes galaw {
+            from {
+                transform: translateY(-100%); 
+            }
+            to {
+                transform: translateX(0); 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="About_Me.html" class="nav-link"> Personal Info</a>
+        <a href="#">Others</a>
+        <a href="#">About</a>
+    </nav>
+
+    <div id="personalProfile">
+        <p1>PERSONAL</p1> <br>
+        <p1>PROFILE </p1> <br>
+      
+        <button onclick="window.location.href='About_Me.html'">Know Me  </button>
+    </div>
+
+</body>
+</html>
